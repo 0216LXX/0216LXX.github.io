@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | 田友达的测试博客</title>
+  <title>笔记 | 田友达的测试博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="Jsp&#x2F;servletjsp侧重于视图，servlet主要用于控制逻辑。为什么说jsp本质是一个servlet发现两点；1：继承了HttpServlet2.写了Servlet方法–调用了一个抽象方法1、说一说Servlet生命周期Servlet的生命周期分为三部分初始化：Web容器加载servlet，调用init()方法进行初始化。处理请求：当请求到达时，运行其service()方法。Servic">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;15&#x2F;hello-world&#x2F;index.html">
+<meta property="og:title" content="笔记">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;18&#x2F;%E7%AC%94%E8%AE%B0&#x2F;index.html">
 <meta property="og:site_name" content="田友达的测试博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Jsp&#x2F;servletjsp侧重于视图，servlet主要用于控制逻辑。为什么说jsp本质是一个servlet发现两点；1：继承了HttpServlet2.写了Servlet方法–调用了一个抽象方法1、说一说Servlet生命周期Servlet的生命周期分为三部分初始化：Web容器加载servlet，调用init()方法进行初始化。处理请求：当请求到达时，运行其service()方法。Servic">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2019-12-15T10:20:17.439Z">
-<meta property="article:modified_time" content="2019-12-15T10:20:17.439Z">
+<meta property="article:published_time" content="2019-12-18T12:20:41.000Z">
+<meta property="article:modified_time" content="2019-12-18T12:21:30.282Z">
 <meta property="article:author" content="tyd">
 <meta name="twitter:card" content="summary">
   
@@ -159,39 +159,107 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      笔记
     </h1>
   
 
         
-        <a href="/2019/12/15/hello-world/" class="archive-article-date">
-  	<time datetime="2019-12-15T10:20:17.439Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-15</time>
+        <a href="/2019/12/18/%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2019-12-18T12:20:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <p>Jsp/servlet<br>jsp侧重于视图，servlet主要用于控制逻辑。<br>为什么说jsp本质是一个servlet<br>发现两点；<br>1：继承了HttpServlet<br>2.写了Servlet方法–调用了一个抽象方法<br>1、说一说Servlet生命周期<br>Servlet的生命周期分为三部分<br>初始化：Web容器加载servlet，调用init()方法进行初始化。<br>处理请求：当请求到达时，运行其service()方法。Service()会根据表单的请求类型调用相对doGet()方法或者是doPost()方法。<br>销毁：当服务器关闭时，调用distroy()方法销毁servlet。<br>2、get提交和post提交有何区别<br>get一般用于从服务器上获取数据，post一般用于向服务器传送数据。<br>get的请求参数是拼接在url后面，可以在浏览器地址栏看见，post是放在http包的包体中。<br>get方法提交的数据只能是文本，大小不能超过1024个字节，而post不仅可以提交文本还有二进制文件。所以要上传文件，就使用post请求方式。<br>3、jsp与servlet有什么区别<br>jsp的本质就是一个servlet 他会被容器转化成servlet，在编译成class文件  调用jspService()处理请求。<br>jsp注重的是页面展示     servlet注重的是流程控制和事务处理<br>4、doGet与doPost方法的两个参数是什么<br>HttpServletRequest：封装了与请求相关的信息</p>
+<p>HttpServletResponse：封装了与响应相关的信息<br>5、request.getAttribute()和request.getParameter的区别？<br>1.有setAttribute，没有setParameter方法<br>2.getParameter获取到的值只能是字符串，不可以是对象，而getAttribute获取到的值是Object类型的。<br>3.getParameter获取from表单传递过来的值；getAttribute只能获取使用setAttribute设置的值。<br>6、jsp有哪些内置对象，作用是什么<br>request：包含用户端请求的信息<br>response：包含服务器传回客户端的响应信息<br>session：与请求有关的会话期<br>pageContext：管理网页属性<br>application：服务器启动时创建，服务器关闭时停止，为多个应用程序保存信息<br>out：向客户端输出数据<br>config：servlet的架构部件<br>page：指网页本身<br>exception：针对错误页面才可使用<br>7、四种会话跟踪技术作用域<br>page：一个页面<br>request：：一次请求</p>
+<p>session：一次会话<br>application：服务器从启动到停止。<br>8、JSP中动态INCLUDE和静态INCLUDE有什么区别<br>（动态包含使用&lt;jsp:include page=””&gt;使用page属性实现。）<br>（静态包含使用&lt;%@include file=””&gt;使用file属性实现。）<br>Include指令用于把另外一个页面包含到当前页面中，在转换成servlet的时候包含进去的。<br>动态include用动作实现，它总会检查所含文件中的变化，适合用于包含动态页面，并且可以带参数。<br>静态include用伪码实现，不会检查所包含的文件变化，使用于包含静态页面<br>9、forward和redirect的区别<br>请求转发与重定向<br>请求转发：服务器内部跳转，浏览器地址栏的地址不变，重定向：告诉浏览器，发送二次跳转。<br>请求转发：可以共享request里面的数据，重定向：不能共享数据。<br>请求转发：只能在同一个项目跳转，重定向：可以跨域访问。<br>请求转发：效率高，重定向：效率低。<br>10、 说出JSP的6个动作指令和作用？<br>jsp:include：在页面被请求的时候引入一个静态或动态的文件。<br>jsp:useBean：实力化一个对象。</p>
+<p>jsp:setProperty：设置对象的属性。<br>jsp:getProperty：获取对象的属性。<br>jsp:forward：请求转发。<br>11、JSP的3种跳转方式<br>response.sendRedirct()方法：重新发送请求。<br>response.setHeader()方法：重新发送请求但可以设置等待的时间。<br>&lt;jsp:forward page=”跳转的页面”/&gt;：请求转发，服务器的跳转。<br>12、 谈谈Servlet过滤器的作用？<br>在请求到达servlet之前，执行过滤器，过滤器决定是否执行(可以进行权限控制)，可以提前设置一些参数(比如在执行action前设置统一字符集)。<br>当你在执行一个方法，在这个方法前或方法后执行一些方法(防止重复提交)。<br>13、 谈谈Servlet监听器的作用<br>对特定的事件进行监听，当产生这些事件的时候，会执行监听器的代码，分为生命周期监听器和数据变化监听器(统计在线人数(监听session)、网站的访问量(request))。</p>
+<p>14、 请简要描述jstl<br> JSP标准标签库（JSTL）是一个JSP标签集合，它封装了核心库<br>c标签，fmt格式化标签，fn字符串处理标签，sql标签，xml标签。Jstl还提供了实现自定义标签功能，方便我们的页面控件编写。<br>15、 如何现实servlet的单线程模式<br> Jsp修改page指令   &lt;%@ page isThreadSafe=”false”%&gt;，将编译后的servlet实现SingleThreadModel接口。<br>16、介绍el表达式<br>EL表达式全名是Expression Language<br>EL表达式一般操作的是作用域(page、request、session、application)中的属性，使用${标识符}.<br>17、 tomcat如何调优<br>对jvm的堆的最大值修改为可用内存的80%(修改catalina.bat的相关参数)。<br>禁用DNS查询(直接使用IP地址访问)。<br>修改最大线程连接数。<br>设置超时机制。<br>18、 tomcat部署的方式有几种<br>1.将web项目文件拷贝到webapps目录中。<br>2.在tomcat中的conf目录下修改server.xml文件，在host节点中添加<context>标签。并指向项目所在路径。<br>3.在tomcat中conf\Catalina\localhost目录下添加一个xml文件 文件名可用随意取，并写入一个<context>标签，并指向项目所在路径。<br>4.用tomcat在线后台管理器，一般tomcat都打开了，直接上传war就可以</p>
+<p>Spring<br>IOC（原理工厂模式）<br>Spring的本质是一个bean工厂(beanFactory)或者说bean容器，它按照我们的要求，生产我们需要的各种各样的bean，提供给我们使用。只是在生产bean的过程中，需要解决bean之间的依赖问题，才引入了依赖注入(DI)这种技术。也就是说依赖注入是beanFactory生产bean时为了解决bean之间的依赖的一种技术而已。<br>那么我们为什么需要Spring框架来给我们提供这个beanFactory的功能呢？原因是一般我们认为是，可以将原来硬编码的依赖，通过Spring这个beanFactory这个工厂来注入依赖，也就是说原来只有依赖方和被依赖方，现在我们引入了第三方——spring这个beanFactory，由它来解决bean之间的依赖问题，达到了松耦合的效果；这个只是原因之一，还有一个更加重要的原因：在没有spring这个beanFactory之前，我们都是直接通过new来实例化各种对象，现在各种对象bean的生产都是通过beanFactory来实例化的，这样的话，spring这个beanFactory就可以在实例化bean的过程中，做一些小动作——在实例化bean的各个阶段进行一些额外的处理，也就是说beanFactory会在bean的生命周期的各个阶段中对bean进行各种管理，并且spring将这些阶段通过各种接口暴露给我们，让我们可以对bean进行各种处理，我们只要让bean实现对应的接口，那么spring就会在bean的生命周期调用我们实现的接口来处理该bean。<br>AOP（原理代理设计模式）<br>1.基于 JDK 的动态代理；<br>2.基于 CGLib 的动态代理</p>
+<p>面向切面编程一般适用于横切逻辑的场合，比如：访问控制，事务监测，性能监测等。<br>为对象设置一个代理对象，代理对象为一个方法提供可一个代理方法，当通过代理对象的方法调用原对象的方法，就可以在代理方法中添加新的功能，增强他的功能。<br>理解<br>1、Spring实现了工厂模式的工厂类，这个类名为BeanFactory(接口)，<br>在程序中通常用他的子类ApplicationContext。<br>Spring相当于一个大的工厂类，在其配置文件中通过<bean>元素配置用于<br>创建实例对象的类名和实例对象的属性。</p>
+<p>工厂模式是一种生产对象型的设计模式，有了工厂模式后，当需要某个类的<br>对象时，就不再需要new指定的类，而是调用工厂中的方法即可。也就不需要<br>关心对象的创建过程。甚至有时候也许你需要的对象只要是某种大分类的类型<br>就可以了，而不必是某个指定的类型。不会过渡依赖某个类，这些类都是<br>易于被替换的，以提高整个项目的可维护性。<br>在日常生活中容器就是一种盛放东西的器具，从程序设计角度看就是装对象的的对象，因为存在放入、拿出等操作，所以容器还要管理对象的生命周期。<br>Spring 的优势<br>低侵入 / 低耦合 （降低组件之间的耦合度，实现软件各层之间的解耦）<br>声明式事务管理（基于切面和惯例）<br>方便集成其他框架（如MyBatis、Hibernate）<br>降低 Java 开发难度<br>Spring 框架中包括了 J2EE 三层的每一层的解决方案（一站式）</p>
+<p>反射<br>JAVA反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；对于任意一个对象，都能够调用它的任意方法和属性；这种动态获取信息以及动态调用对象方法的功能称为java语言的反射机制。<br>与Java反射相关的类如下：<br>类名    用途<br>Class类    代表类的实体，在运行的Java应用程序中表示类和接口<br>Field类    代表类的成员变量（成员变量也称为类的属性）<br>Method类    代表类的方法<br>Constructor类    代表类的构造方法</p>
+<p>⑥反射<br>①获取class<br>②获取构造方法<br>③获取类的成员方法<br>④获取类的成员变量（成员属性）</p>
+<p>单例模式<br>设计模式之单例模式<br>所谓单例，就是整个程序有且仅有一个实例。该类负责创建自己的对象，同时确保只有一个对象被创建。在Java，一般常用在工具类的实现或创建对象需要消耗资源。<br>特点<br>类构造器私有<br>持有自己类型的属性<br>对外提供获取实例的静态方法<br>懒汉模式<br>线程不安全，延迟初始化，严格意义上不是不是单例模式<br>public class Singleton {<br>    private static Singleton instance;<br>    private Singleton (){}  </p>
+<pre><code>public static Singleton getInstance() {  
+if (instance == null) {  
+    instance = new Singleton();  
+}  
+return instance;  
+}  }</code></pre><p>饿汉模式<br>线程安全，比较常用，但容易产生垃圾，因为一开始就初始化<br>public class Singleton {<br>    private static Singleton instance = new Singleton();<br>    private Singleton (){}<br>    public static Singleton getInstance() {<br>    return instance;<br>    }  }<br>双重锁模式<br>线程安全，延迟初始化。这种方式采用双锁机制，安全且在多线程情况下能保持高性能。<br>public class Singleton {<br>    private volatile static Singleton singleton;<br>    private Singleton (){}<br>    public static Singleton getSingleton() {<br>    if (singleton == null) {<br>        synchronized (Singleton.class) {<br>        if (singleton == null) {<br>            singleton = new Singleton();<br>        }<br>        }<br>    }<br>    return singleton;<br>    }  }<br>双重检查模式，进行了两次的判断，第一次是为了避免不要的实例，第二次是为了进行同步，避免多线程问题。由于singleton=new Singleton()对象的创建在JVM中可能会进行重排序，在多线程访问下存在风险，使用volatile修饰signleton实例变量有效，解决该问题。<br>静态内部类单例模式<br>public class Singleton {<br>    private Singleton(){<br>    }<br>      public static Singleton getInstance(){<br>        return Inner.instance;<br>    }<br>    private static class Inner {<br>        private static final Singleton instance = new Singleton();<br>    }  } </p>
+<p>只有第一次调用getInstance方法时，虚拟机才加载 Inner 并初始化instance ，只有一个线程可以获得对象的初始化锁，其他线程无法进行初始化，保证对象的唯一性。目前此方式是所有单例模式中最推荐的模式，但具体还是根据项目选择。<br>枚举单例模式<br>public enum Singleton {<br>    INSTANCE;}<br>默认枚举实例的创建是线程安全的，并且在任何情况下都是单例。实际上<br>枚举类隐藏了私有的构造器。<br>枚举类的域 是相应类型的一个实例对象<br>那么枚举类型日常用例是这样子的：<br>public enum Singleton  {<br>    INSTANCE </p>
+<pre><code>//doSomething 该实例支持的行为
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+//可以省略此方法，通过Singleton.INSTANCE进行操作
+public static Singleton get Instance() {
+    return Singleton.INSTANCE;
+}}</code></pre><p>枚举单例模式在《Effective Java》中推荐的单例模式之一。但枚举实例在日常开发是很少使用的，就是很简单以导致可读性较差。<br>在以上所有的单例模式中，推荐静态内部类单例模式。主要是非常直观，即保证线程安全又保证唯一性。<br>众所周知，单例模式是创建型模式，都会新建一个实例。那么一个重要的问题就是反序列化。当实例被写入到文件到反序列化成实例时，我们需要重写readResolve方法，以让实例唯一。<br>private Object readResolve() throws ObjectStreamException{<br>        return singleton;}<br>反序列化<br>序列化对象<br>【1】、必须实现序列化接口 Serializable：Java.io.Serializable 接口。<br>【2】、serialVersionUID：序列化的版本号，凡是实现 Serializable 接口的类都有一个静态的表示序列化版本标识符的变量。</p>
+<p>Springmvc</p>
+<p>架构流程<br>1、  用户发送请求至前端控制器DispatcherServlet</p>
+<p>2、  DispatcherServlet收到请求调用HandlerMapping处理器映射器。</p>
+<p>3、  处理器映射器根据请求url找到具体的处理器，生成处理器对象及处理器拦截器(如果有则生成)一并返回给DispatcherServlet。</p>
+<p>4、  DispatcherServlet通过HandlerAdapter处理器适配器调用处理器</p>
+<p>5、  执行处理器(Controller，也叫后端控制器)。</p>
+<p>6、  Controller执行完成返回ModelAndView</p>
+<p>7、HandlerAdapter将controller执行结果ModelAndView返回给DispatcherServlet</p>
+<p>8、DispatcherServlet将ModelAndView传给ViewReslover视图解析器</p>
+<p>9、 ViewReslover解析后返回具体View</p>
+<p>10、DispatcherServlet对View进行渲染视图（即将模型数据填充至视图中）。</p>
+<p>11、DispatcherServlet响应用户<br>Springmvc各个注解的作用<br>1、@Controller    @service<br>标记一个类是Controller</p>
+<p>2、@RequestMapping<br>是一个用来处理请求地址映射的注解，可用于类或方法上。用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。<br>3、@Resource和@Autowired<br>@Resource和@Autowired都是做bean的注入时使用，其实@Resource并不是Spring的注解，它的包是javax.annotation.Resource，需要导入，但是Spring支持该注解的注入。</p>
+<p>4、@ModelAttribute和 @SessionAttributes<br>代表的是：该Controller的所有方法在调用前，先执行此@ModelAttribute方法，可用于注解和方法参数中，可以把这个<br>5、@PathVariable<br>用于将请求URL中的模板变量映射到功能处理方法的参数上，即取出uri模板中的变量作为参数。<br>6、@requestParam<br>@requestParam主要用于在SpringMVC后台控制层获取参数，<br>7、@ResponseBody<br>作用： 该注解用于将Controller的方法返回的对象，通过适当的HttpMessageConverter转换为指定格式后，写入到Response对象的body数据区。<br>8、@Component<br>相当于通用的注解，当不知道一些类归到哪个层时使用，但是不建议。<br>9、@Repository<br>用于注解dao层，在daoImpl类上面注解。<br>Mybatis<br>数据持久层框架，内部封装了jdbc，它支持定制化 SQL、存储过程以及高级映射，可以使用简单的 XML 或注解来配置和映射原生信息<br>Hadoop<br>25. Hadoop<br>25.1.1.<br>概念<br>就是一个大数据解决方案。套分布式系统基础架构。 核心内容包含 hdfs 和 mapreduce。hadoop2.0 以后引入 yarn.<br>hdfs 是提供数据存储的，mapreduce 是方便数据计算的。<br>1、HDFS写入数据过程分析<br>2、HDFS读取文件过程分析<br>3、HDFS容错机制：故障类型及监测方法<br>4、HDFS容错机制：读写容错方法<br>5、HDFS容错机制：数据节点（DN）失效策略<br>6、HDFS备份容错规则<br>ZooKeeper<br>它是一个为分布式应用提供一致性服务的软件<br>ZooKeeper的基本运转流程：<br>1、选举Leader。<br>2、同步数据。<br>3、选举Leader过程中算法有很多，但要达到的选举标准是一致的。<br>4、Leader要具有最高的执行ID，类似root权限。<br>5、集群中大多数的机器得到响应并接受选出的Leader。<br>网站流量统计是改进网站服务的重要手段之一，通过获取用户在网站的行为数据，比如点击一个链接，进行分析,得到有价值的信息。<br>主要分析的数据是访问量 也叫 点击量，独立访客数，一天之内会话的总的数量，跳出率，新增独立访客数等等。<br>主要是网页埋点，日志收集，数据清洗，离线分析，利用sqoop从hive中导出数据到mysql。<br>1.日志收集使用flume配置agent文件然后写到hdfs里面<br>a.在日志服务器应用中导入Log4jAppernder相关开发包<br>b.配置log4j配置文件，实现发送日志给flume<br>c.在日志服务器的LogServlet中，通过log4j来发送日志<br>2.数据清洗<br>a清洗目标<br>只保留需要的字段<br>将会话信息拆分<br>b创建外部分区表管理已经在HDFS的流量数据<br>c增加flux的分区信息<br>创建数据清洗表dataclear<br>从zebra表中导入数据到dataclear表，在这个过程中完成数据清洗<br>3.数据处理<br>1.利用Hive实现业务指标的计算<br>2.将计算结果存入统计表<br>4.数据分析</p>
+<p>会计网校<br>学员管理，商品管理，运营管理，内容管理，考试管理，用户管理，系统管理，活动管理<br>1.批量导入功能：先下载excel表格的模板，然后里面写入学员的信息，然后进行存储。<br>2.批量复制课次功能：先批量选中，然后进行选择相应的课程，然后进行复制。主要是写了一个插件来协助完成<br>3.活动课程二维码接口：主要是调用达内这边封装的方法生成<br>但是我下来了解到生成二维码的方法有3种及时分别用各种的包<br>Qrcode<br>课程管理：方向 课程 科目 课程名称 封面图片 课程价格<br>课次管理: 视频名称 授课教师 视频类型 是否是直播课 课程名称 视频时间</p>
+<p>电子合同<br>主要是生成公司员工要签署的一系列的合同模板，例如入职，离职，续约，实习生协议等等<br>1.在ui页面切换的时候，就得先找到原来的页面，然后对jsp进行修改，然后修改标题<br>background-size:contain;<br>2.在修改bug那个问题就是先了解平台的系统管理的系统资源管理和菜单管理的各个资源，发现有个菜单的资源都是首页的资源，然后修改了资源就好了</p>
+<p>Python<br>1.爬虫的基本流程<br>发起请求<br>通过HTTP库向目标站点发起请求，也就是发送一个Request，请求可以包含额外的header等信息，等待服务器响应。<br>获取响应内容<br>如果服务器能正常响应，会得到一个Response，Response的内容便是所要获取的页面内容，类型可能是HTML,Json字符串，二进制数据（图片或者视频）等类型<br>解析内容<br>得到的内容可能是HTML,可以用正则表达式，页面解析库进行解析，可能是Json,可以直接转换为Json对象解析，可能是二进制数据，可以做保存或者进一步的处理<br>保存数据<br>保存形式多样，可以存为文本，也可以保存到数据库，或者保存特定格式的文件</p>
+<p>Spring Boot<br>Spring Boot 是所有基于 Spring 开发的项目的起点。Spring Boot 的设计是为了让你尽可能快的跑起来 Spring 应用程序并且尽可能减少你的配置文件。简单来说就是SpringBoot其实不是什么新的框架，它默认配置了很多框架的使用方式，就像maven整合了所有的jar包，spring boot整合了所有的框架（不知道这样比喻是否合适）。</p>
+<p>2.2、SpringBoot四个主要特性</p>
+<p>1、SpringBoot Starter：他将常用的依赖分组进行了整合，将其合并到一个依赖中，这样就可以一次性添加到项目的Maven或Gradle构建中；</p>
+<p>2、自动配置：SpringBoot的自动配置特性利用了Spring4对条件化配置的支持，合理地推测应用所需的bean并自动化配置他们；</p>
+<p>3、命令行接口：（Command-line-interface, CLI）：SpringBoot的CLI发挥了Groovy编程语言的优势，并结合自动配置进一步简化Spring应用的开发；</p>
+<p>4、Actuatir：它为SpringBoot应用的所有特性构建一个小型的应用程序。但首先，我们快速了解每项特性，更好的体验他们如何简化Spring编程模型。<br>异常</p>
+<p>Java中的异常有哪几类？分别怎么使用？<br>Exception又包含了运行时异常(RuntimeException, 又叫非检查异常)和非运行时异常(又叫检查异常)<br>(1) Error是程序无法处理了, 如果OutOfMemoryError、OutOfMemoryError等等, 这些异常发生时, java虚拟机一般会终止线程 .<br>(2) 运行时异常都是RuntimeException类及其子类,如 NullPointerException、IndexOutOfBoundsException等, 这些异常是不检查的异常, 是在程序运行的时候可能会发生的, 所以程序可以捕捉, 也可以不捕捉. 这些错误一般是由程序的逻辑错误引起的, 程序应该从逻辑角度去尽量避免.<br>(3) 检查异常是运行时异常以外的异常, 也是Exception及其子类, 这些异常从程序的角度来说是必须经过捕捉检查处理的, 否则不能通过编译. 如IOException、SQLException等<br>在使用所有有可能为空的对象的时候先做是否为空的判断，为空可以打日志，然后RETURN掉，或者作其它处理，这个可能为空是有很多情况的，比如说数据库查询出错异常没抛到调用方法这来，或者初始化出异常，没有初始化成功导致对象为NULL，等等这种是有很多的，所以最好是养成多打日志的习惯，这样找问题会很简单</p>
+<p>数组越界异常，先看哪里出错了，然后用判断条件来避免。<br>if ( (pos &lt; 0) || (pos &gt; ARRAY_SIZE) ) {异常处理}</p>
+<p>用Axure画的相关的原型图</p>
+<p>怎么配置tomacat的端口号<br>1.修改端口:<br>在Tomcat的安装目录下的\conf目录下,打开server.xml,<br>找到<br><Connector port="8080" protocol="HTTP/1.1"
+connectionTimeout="20000"
+redirectPort="8443"/><br>将8080改为你想要的端口8081</p>
+<p>2.映射路径:<br>还是在server.xml配置文件中,<br>在</host>这个结束标签之前加上如下的配置信息:<br><Context
+path="/myapp"
+reloadable="true"
+docBase="e:\myApp" /></p>
+<p>3.添加端口:<br>在server.xml中添加以下:<br><Connector port="65535" protocol="HTTP/1.1"
+connectionTimeout="20000" /><br>Tomcat的端口号最大到65535.</p>
+<p>Jvm</p>
+<p>类加载器（ClassLoader）<br>运行时数据区（Runtime Data Area）<br>执行引擎（Execution Engine）<br>本地库接口（Native Interface）<br>组件的作用： 首先通过类加载器（ClassLoader）会把 Java 代码转换成字节码，运行时数据区（Runtime Data Area）再把字节码加载到内存中，而字节码文件只是 JVM 的一套指令集规范，并不能直接交给底层操作系统去执行，因此需要特定的命令解析器执行引擎（Execution Engine），将字节码翻译成底层系统指令，再交由 CPU 去执行，而这个过程中需要调用其他语言的本地库接口（Native Interface）来实现整个程序的功能。</p>
+<p>1） 类装载器（ClassLoader）（用来装载.class文件）<br>2） 执行引擎（执行字节码，或者执行本地方法）<br>3） 运行时数据区（方法区、堆、虚拟机栈、程序计数器、本地方法栈）<br>首先我们对运行时数据区中的5个区域进行分析：<br>3. 运行时数据区：<br>3.1 堆：<br>所有线程共享的内存区域，在虚拟机启动时创建。<br>用来存储对象实例，如：String a = new String()中new String()创建了一个对象，该对象存放在堆内存中，而a 是存放在栈中的，堆中new String() 存放了栈中 a 的内存地址。<br>可以通过-Xmx和-Xms控制堆的大小<br>当在堆中没有内存完成实例分配，且堆也无法再扩展时，会报OutOfMemoryError异常。<br>java堆是垃圾回收器的主要工作区域。java对还可以分为新生代、老年代。但是垃圾回收器的永久代是在方法区中的，不在堆中。<br>（新生代：新建的对象由新生代分配内存；老年代：存放经过多次垃圾回收器回收仍然存活的对象；永久代：存放静态文件，如java类、方法等，永久代存放在方法区，对垃圾回收没有显著的影响）<br>3.1.1 新生代：<br>分为三部分：1个Eden区和2个Survivor区（分别叫from和to）。默认比例为8：1。一般情况下，新创建的对象都会被分配到Eden区(一些大对象特殊处理),这些对象经过第一次Minor GC后，如果仍然存活，将会被移到Survivor区。对象在Survivor区中每熬过一次Minor GC，年龄就会增加1岁，当它的年龄增加到一定程度时，就会被移动到年老代中。<br>因为年轻代中的对象基本都是朝生夕死的(80%以上)，所以在年轻代的垃圾回收算法使用的是复制算法，复制算法的基本思想就是将内存分为两块，每次只用其中一块，当这一块内存用完，就将还活着的对象复制到另外一块上面。复制算法不会产生内存碎片。<br>在GC开始的时候，对象只会存在于Eden区和名为“From”的Survivor区，Survivor区“To”是空的。紧接着进行GC，Eden区中所有存活的对象都会被复制到“To”，而在“From”区中，仍存活的对象会根据他们的年龄值来决定去向。年龄达到一定值(年龄阈值，可以通过-XX:MaxTenuringThreshold来设置)的对象会被移动到年老代中，没有达到阈值的对象会被复制到“To”区域。（动态判断对象的年龄。如果Survivor区中相同年龄的所有对象大小的总和大于Survivor空间的一半，年龄大于或等于该年龄的对象可以直接进入老年代。）经过这次GC后，Eden区和From区已经被清空。这个时候，“From”和“To”会交换他们的角色，也就是新的“To”就是上次GC前的“From”，新的“From”就是上次GC前的“To”。不管怎样，都会保证名为To的Survivor区域是空的。Minor GC会一直重复这样的过程，直到“To”区被填满，“To”区被填满之后，会将所有对象移动到年老代中。<br>GC可分为三种：Minor GC Major GC 和 Full GC<br>Minor GC ：是清理新生代。触发条件：当Eden区满时，触发Minor GC。<br>Major GC：是清理老年代。是 Major GC 还是 Full GC，大家应该关注当前的 GC 是否停止了所有应用程序的线程，还是能够并发的处理而不用停掉应用程序的线程。<br>Full GC ：是清理整个堆空间—包括年轻代和老年代。触发条件：调用System.gc时，系统建议执行Full GC，但是不必然执行;老年代空间不足;方法区空间不足；通过Minor GC后进入老年代的平均大小大于老年代的可用内存；由Eden区、From Space区向To Space区复制时，对象大小大于To Space可用内存，则把该对象转存到老年代，且老年代的可用内存小于该对象大小<br>3.1.2 老年代：<br>主要存放应用程序中生命周期长的内存对象。<br>老年代的对象比较稳定，所以MajorGC不会频繁执行。在进行MajorGC前一般都先进行了一次MinorGC，使得有新生代的对象晋身入老年代，导致空间不够用时才触发。当无法找到足够大的连续空间分配给新创建的较大对象时也会提前触发一次MajorGC进行垃圾回收腾出空间。<br>MajorGC采用标记—清除算法：首先扫描一次所有老年代，标记出存活的对象，然后回收没有标记的对象。MajorGC的耗时比较长，因为要扫描再回收。MajorGC会产生内存碎片，为了减少内存损耗，我们一般需要进行合并或者标记出来方便下次直接分配。<br>当老年代也满了装不下的时候，就会抛出OOM（Out of Memory）异常。<br> 3.1.3 永久代（永久代是在方法区中的，而不在堆中，这里只是为了总结GC的运行机制并和新生代、老年代进行比较才将永久代放在这里写）：<br>指内存的永久保存区域，主要存放Class和Meta（元数据）的信息,Class在被加载的时候被放入永久区域. 它和存放实例的区域不同,GC不会在主程序运行期对永久区域进行清理。所以这也导致了永久代的区域会随着加载的Class的增多而胀满，最终抛出OOM异常。<br>在Java8中，永久代已经被移除，被一个称为“元数据区”（元空间）的MetaSpace区域所取代。元空间的本质和永久代类似，都是对JVM规范中方法区的实现。不过元空间与永久代之间最大的区别在于：元空间并不在虚拟机中，而是使用本地内存。因此，默认情况下，元空间的大小仅受本地内存限制。类的元数据放入 native memory, 字符串池和类的静态变量放入java堆中. 这样可以加载多少类的元数据就不再由MaxPermSize控制, 而由系统的实际可用空间来控制.采用元空间取代永久代的原因：（1）为了解决永久代的OOM问题，元数据和class对象存在永久代中，容易出现性能问题和内存溢出。（2）类及方法的信息等比较难确定其大小，因此对于永久代的大小指定比较困难，太小容易出现永久代溢出，太大则容易导致老年代溢出（因为堆空间有限，此消彼长）。（3）永久代会为 GC 带来不必要的复杂度，并且回收效率偏低（4）Oracle 可能会将HotSpot 与 JRockit 合二为一。<br>3.2 方法区：<br>所有线程共享<br>用于存储已被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码等数据。<br>当方法区无法满足内存的分配需求时，报OutOfMemoryError异常<br>方法区中有一个运行时常量池，用于存储编译期生成的各种字面量与符号引用，当常量池无法再申请到内存时报OutOfMemoryError异常。<br>3.3 虚拟机栈：<br>线程私有，声明周期与线程同步。<br>存储一些方法的局部变量表（基本类型、对象引用）、操作数栈、动态链接、方法出口等信息。<br>每个虚拟机线程都有一个私有的栈，一个线程的java栈在线程创建的时候被创建。<br>每个方法执行的同时都会创建一个栈帧，每个方法被调用直至完成的过程，就对应着一个栈帧在虚拟机中从入栈到出栈的过程。<br>当线程请求的栈深度大于虚拟机允许的深度时报StackOverFlowError异常。<br>当栈的扩展无法申请到足够的内存时报OutOfMemoryError异常。<br>3.4 本地方法栈：<br>主要是为虚拟机使用到的Native方法服务，Native 方法就是一个java调用非java代码的接口，该方法的实现由非java语言实现。Native方法用native修饰，没有方法体，因为方法体中的实现是非java语言的。<br>有时java需要调用操作系统的一些方法，而操作系统基本都是C语言写的，这时就需要使用到Native方法了。<br>Native方法关键字修饰的方法是一个原生态的方法，方法对应的实现不是在当前文件，而是在用其他语言（如C和C++）实现的文件中。java语言本身不能对操作系统底层进行访问和操作，但是可以通过JNI（Java Native Interface）接口调用其他语言来实现对底层的访问。<br>3.5 程序计数器：<br>当前线程所执行的字节码的行号指示器，当前线程私有，由于他只是存储行号，一般就是一个数字，所以不会出现OutOfMemoryError异常。<br>其特点是：如果正在执行java方法，则这个计数器记录的是正在执行的虚拟机字节码指令地址，如果正在执行Native方法，则这个计数器为空（undefined），此内存区域是唯一一个在java虚拟机中没有规定任何OutOfMemoryError异常情况的区域。<br>使用场景：A线程先获取CPU时间片执行，当执行到一半的时候，B线程过来了，且优先级比A线程的高，所以处理器又去执行B线程了，把A线程挂起，当B线程执行完了以后，再回过头来执行A线程，这时就需要知道A线程已经执行的位置，也就是查看A中的程序计数器中的指令。</p>
+<p>总结：java对象存放在堆中，常量存放在方法区的常量池中，虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码等数据放在方法区，以上区域都是线程共享的。栈是线程私有的，存放该方法的局部变量（基本类型、对象引用）操作数栈、动态链接、方法出口等信息。一个java程序对应一个JVM，一个方法对应一个java栈。<br>JVM垃圾回收算法<br>1.标记–清除算法<br>执行步骤：<br>标记：遍历内存区域，对需要回收的对象打上标记。<br>清除：再次遍历内存，对已经标记过的内存进行回收。<br>缺点：<br>效率问题；遍历了两次内存空间（第一次标记，第二次清除）。<br>空间问题：容易产生大量内存碎片，当再需要一块比较大的内存时，无法找到一块满足要求的，因而不得不再次出发GC。<br>2.复制算法<br>将内存划分为等大的两块，每次只使用其中的一块。当一块用完了，触发GC时，将该块中存活的对象复制到另一块区域，然后一次性清理掉这块没有用的内存。下次触发GC时将那块中存活的的又复制到这块，然后抹掉那块，循环往复。<br>优点<br>相对于标记–清理算法解决了内存的碎片化问题。<br>效率更高（清理内存时，记住首尾地址，一次性抹掉）。<br>缺点：<br>内存利用率不高，每次只能使用一半内存。<br>3. 标记–整理算法<br>因为前面的复制算法当对象的存活率比较高时，这样一直复制过来，复制过去，没啥意义，且浪费时间。所以针对老年代提出了“标记整理”算法。<br>执行步骤：<br>标记：对需要回收的进行标记<br>整理：让存活的对象，向内存的一端移动，然后直接清理掉没有用的内存。<br>4. 分代收集算法<br>当前大多商用虚拟机都采用这种分代收集算法，这个算法并没有新的内容，只是根据对象的存活的时间的长短，将内存分为了新生代和老年代，这样就可以针对不同的区域，采取对应的算法。如：<br>新生代，每次都有大量对象死亡，有老年代作为内存担保，采取复制算法。<br>老年代，对象存活时间长，采用标记整理，或者标记清理算法都可。</p>
+<p>Java<br>java语言的优缺点<br>角度一：<br>优点：简单、安全、稳定、跨平台<br>缺点：需要运行环境、不适合开发桌面应用程序<br>应用：BS结构的ERP系统、金融系统、电子商务系统、网站等<br>几乎所有的银行系统和银行网站都是基于Java平台的，你可以访问看看。<br>角度二：<br>优势：<br>（1）一次编写，到处运行。<br>（2）系统的多平台支持。<br>（3）强大的可伸缩性。<br>（4）多样化和功能强大的开发工具支持。<br>劣势：<br>（1） 与ASP一样，Java的一些优势正是它致命的问题所在。正是由于为了跨平台的功能，为了极度的伸缩能力，所以极大的增加了产品的复杂性。<br>（2） Java的运行速度是用class常驻内存来完成的，所以它在一些情况下所使用的内存比起用户数量来说确实是“最低性能价格比”了。从另一方面，它还需要硬盘空间来储存一系列的。java文件和.class文件，以及对应的版本文件。<br>角度三：<br>1、跨平台性，虽然是很好的优势，可以让JAVA在任何的系统中运行，但是前提是该系统要安装JAVA虚拟机，这样导致一些JAVA编写的桌面程序无法在一般的用户（没有安装JAVA虚拟机的用户）上使用<br>2、JAVA的身后是SUN公司，提供及时的API更新，但是过多的版本导致JAVA的向下兼容性很差。而SUN公司在J2EE上的标准定义的并不是完美，导致在J2EE的开发中多数使用开源框架，开源框架是好东西，但是更新速度并不快。<br>3、都说面向对象的语言先进与面向过程，JAVA是OOP语言，但是它适合的是BS系统，在WEB项目中JAVA的实力毋庸置疑，但是转到了底层的程序却无法同C++抗衡。<br>4、个人认为JAVA的最大优点是开源，但是这往往也成了最大的缺陷了，无法定义一个好的标准使得开发时使用了框架，在新的程序员来到公司时必须先了解框架，延缓了开发的时间。</p>
+<p>Java中正确打印时间的<br>SimpleDateFormat time=new SimpleDateFormat(“yyyy-MM-dd HH:mm:ss”);<br>String TimeString = time.format(new java.util.Date());<br>Java中常见常用的类<br>1、Object<br>Object类是所有类的父类<br>2、String<br>3、StringBuilder类<br>4、Scanner<br>5、Math类<br>6、Random类<br>7、Date类<br>8、DateFormat<br>Linux中如何查看日志<br>实时查看日志tail -f /var/log/messages<br>初次设计数据库表中需要注意的问题<br>1、选取最适用的字段属性<br>2、使用连接（JOIN）来代替子查询(Sub-Queries)<br>3、使用联合(UNION)来代替手动创建的临时表<br>4、使用外键<br>5、每个表有一个主键<br>“数据结构分为8类有:数组、栈、队列、链表、树、散列表、堆、图。</p>
+<p>拦截器与过滤器的区别 ：<br>    1. 拦截器是基于java的反射机制的。而过滤器是基于函数回调，Spring框架支持，可Spring中的数据源、事务管理等。<br>    2. 使用范围不同：拦截器不依赖与servlet容器，过滤器依赖与servlet容器。<br>    3. 拦截器只能对action请求起作用，针对类，拦截器可以多次被调用。<br>       而过滤器则可以对几乎所有的请求起作用，在容器启动是初始化调用init方法，以后每个请求都调用doFilter()。作用范围包含拦截器。<br>    4. 拦截器可以访问action上下文、值栈里的对象（即方法中的对象），而过滤器不能访问。<br>    5. 拦截器可以在方法前后，异常前请求后各调用一次后等调用，<br>            而过滤器只能在请求前和。<br>    6.深度不同：Filter在Servlet前后作用，Interceptor在方法的前后作用，异常抛出前后，具有更大的弹性。所以优先使用拦截器。<br>    7.filter配置在web.xml中    interceptor配置在spring配置文件中<br>拦截器是AOP的一种实现策略，可实现依赖注入。<br>因此它的完整加载顺序就是 ：ServletContext -&gt; context-param -&gt; listener-&gt; filter -&gt; servlet<br>线程生命周期：它要经过新建(New)、就绪（Runnable）、运行（Running）、阻塞<br>(Blocked)和死亡(Dead)5 种状态。<br>Html<br>Css<br>CSS选择符：id选择器(#myid)、类选择器(.myclassname)、标签选择器(div, h1, p)、相邻选择器(h1 + p)、子选择器（ul &gt; li）、后代选择器（li a）、通配符选择器（<em>）、属性选择器（a[rel=”external”]）、伪类选择器（a:hover, li:nth-child）<br>行级元素(inline, css display属性)：span， strong， em， a ，del，i，code，<br>内容决定元素所占位置<br>不可以通过css改变宽高<br>块级元素(block，css display属性)：div， p, ul, li ,ol, form, address，h1~h6，table &gt; tr &gt; th, td<br>Js<br>事件：<br>js中常用事件<br>鼠标事件<br>onclick：点击某个对象时触发<br>ondblclick：双击某个对象时触发<br>onmouseover：鼠标移入某个元素时触发<br>onmouseout：鼠标移出某个元素时触发<br>onmouseenter：鼠标进入某个元素时触发<br>onmouseleave：鼠标离开某个元素时触发<br>onmousedown：鼠标按下时触发<br>onmouseup：鼠标抬起时触发<br>onmousemove：鼠标被移动时触发<br>onwheel：鼠标滚轮滚动时触发<br>oncontextmenu：点击鼠标右键时触发</em>/<br>键盘事件<br>onkeydown：键盘的键按下时触发<br>onkeyup：键盘的键放开时触发<br>onkeypress：按下或按住键盘键时触发<em>/<br>框架/对象事件<br>onresize：浏览器窗口大小改变时触发<br>onabort：图形的加载被中断时触发<br>onload：元素加载完时触发<br>onerror：当加载文档或者图片时（没找到）发生的错误时触发<br>onscroll：文档滚动时触发<br>onpageshow：用户访问页面时触发<br>onunload：用户退出页面时触发</em>/<br>表单事件<br>onfocus：元素获得焦点时触发<br>onblur：元素失去焦点时触发<br>onchange：元素内容改变时触发<br>oninput：元素获取用户输入时触发<br>onsubmit：提交按钮时触发<br>onreset：重置按钮时触发<br>onselect：文本被选中时触发<em>/<br>拖动事件<br>ondrag：元素正在拖动时触发<br>ondragend：用户完成元素拖动时触发</em>/<br>多媒体事件<br>onplay：在视频/音频开始播放时触发<br>onended：在视频/音频播放结束时触发<br>onpause：在视频/音频暂停时触发*/</p>
+<p>Jq<br>html、css、js、jquery之间的关系详解<br>html、css、js、jquery之间的关系<br>1.简单的理解一：<br>1)HTML 定义了网页的内容<br>2)CSS 描述了网页的布局<br>3)JavaScript 网页的行为<br>4)jQuery 是一个 JavaScript 库。<br>jQuery 极大地简化了 JavaScript 编程。<br>2.从实质上理解二：<br>1)HTML(超文本标记语言, 标记标签)<br>我们可以把它说成是静态代码。<br>2)CSS(层叠样式表)<br>使用CSS制作网页时，可以有效地对页面的布局、边框、字体、颜色、背景和其它效果实现更加精确的控制。<br>3)JavaScript (是世界上最流行的网上最流行的脚本语言)<br>使用JavaScript代码可以让前台变的有交互(点击事件)<br>4)JQuery是(JavaScript库)<br>jQuery是一个封装好的文件，就是指别编写完了供他人重复使用的JS代码<br>2.比喻的理解：<br>一个人，他有头，有手，有脚，有身体,规定他怎么说话，怎么走路这些是“html”;<br>给这个人穿上衣服，打扮一下，这是”CSS”;<br>让这个人变得更漂亮一点,扔掉过时的衣服，买一些新化妆品，这是css3;<br>这个人还要为了生活,去工作,上班,这是”JS”;<br>这个人工作中用到的工具/工具箱, 这是”jQuery”</p>
+<p>又如：<br>HTML:搭建舞台的框架<br>CSS:舞台的装饰<br>JS:导演<br>JQuery:导演设计好的一套动作</p>
+<p>Jsp</p>
+<p>request 请求对象　 类型 javax.servlet.ServletRequest 作用域 Request<br>response 响应对象 类型 javax.servlet.SrvletResponse 作用域 Page<br>pageContext 页面上下文对象 类型 javax.servlet.jsp.PageContext 作用域 Page<br>session 会话对象 类型 javax.servlet.http.HttpSession 作用域 Session<br>application 应用程序对象 类型 javax.servlet.ServletContext 作用域 Application<br>out 输出对象 类型 javax.servlet.jsp.JspWriter 作用域 Page<br>config 配置对象 类型 javax.servlet.ServletConfig 作用域 Page<br>page 页面对象 类型 javax.lang.Object 作用域 Page<br>exception 例外对象 类型 javax.lang.Throwable 作用域 page</p>
+<p>JSP指令。：&lt;%@ 指令名 属性=“值”%&gt;<br>JSP声明。成员变量,或是成员方法.： &lt;%! …. %&gt;<br>Java程序片段。不论有多少这样的代码块，都将包含_jspSerivice方法中。：&lt;% … %&gt;<br>Java表达式。-快速输出信息. &lt;%= …%&gt;</p>
+<p>怎么解决高并发<br> 1.分布式缓存：redis、memcached等，结合CDN来解决图片文件等访问。<br>2.消息队列中间件：activeMQ等，解决大量消息的异步处理能力。<br>3.应用拆分:一个工程被拆分为多个工程部署，利用dubbo解决多工程之间的通信。<br>4.数据库垂直拆分和水平拆分(分库分表)等。<br>5.数据库读写分离，解决大数据的查询问题。<br>6.还可以利用nosql ，例如mongoDB配合mysql组合使用。<br>7.还需要建立大数据访问情况下的服务降级以及限流机制等。<br>Redis 是什么<br>Redis 是一个使用 C 语言写成的，开源的、key-value 结构的、非关系型数据库。<br>TCP/IP分为几层？各层的作用是什么?</p>
+<ol>
+<li>应用层 2.传输层 3.网络层 4.网络接口层*<br>应用层——-。ICP/IP协议族在这一层面有着很多协议来支持不同的应用，许多大家所熟悉的基于Internet的应用的实现就离不开这些协议。如我们进行万维网（WWW）访问用到了HTTP协议、文件传输用FTP协议、电子邮件发送用SMTP、域名的解析用DNS协议、远程登录用Telnet协议等等，都是属于TCP/IP应用层的；就用户而言，看到的是由一个个软件所构筑的大多为图形化的操作界面，而实际后台运行的便是上述协议。（FTP、SMTP、telnet、DNS、tftp）</li>
+</ol>
+<ul>
+<li>传输层——–这一层的的功能主要是提供应用程序间的通信，TCP/IP协议族在这一层的协议有TCP和UDP。（UDP）</li>
+<li>网络层———是TCP/IP协议族中非常关键的一层，主要定义了IP地址格式，从而能够使得不同应用类型的数据在Internet上通畅地传输，IP协议就是一个网络层协议。（IP数据包）</li>
+<li>网络接口层——-这是TCP/IP软件的最低层，负责接收IP数据包并通过网络发送之，或者从网络上接收物理帧，抽出IP数据报，交给IP层。(帧，网络接口协议)<br>线程同步的方法<br>（1）同步方法：<br>即有synchronized关键字修饰的方法。 由于java的每个对象都有一个内置锁，当用此关键字修饰方法时，内置锁会保护整个方法。在调用该方法前，需要获得内置锁，否则就处于阻塞状态。<br>（2）同步代码块<br>即有synchronized关键字修饰的语句块。被该关键字修饰的语句块会自动被加上内置锁，从而实现同步<br>（3）使用特殊域变量(Volatile)实现线程同步<br>a.volatile关键字为域变量的访问提供了一种免锁机制<br>b.使用volatile修饰域相当于告诉虚拟机该域可能会被其他线程更新<br>c.因此每次使用该域就要重新计算，而不是使用寄存器中的值<br>d.volatile不会提供任何原子操作，它也不能用来修饰final类型的变量<br>（4）使用重入锁实现线程同步<br>在JavaSE5.0中新增了一个java.util.concurrent包来支持同步。ReentrantLock类是可重入、互斥、实现了Lock接口的锁， 它与使用synchronized方法和快具有相同的基本行为和语义，并且扩展了其能力。<br>（5）使用局部变量实现线程同步</li>
+</ul>
+<p>Tcp三次握手<br>TCP握手协议 ：在TCP/IP协议中,TCP协议提供可靠的连接服务,采用三次握手建立一个连接。<br>1、第一次握手：建立连接时,客户端发送syn包(syn=j)到服务器,并进入SYN_SEND状态,等待服务器确认； SYN：同步序列编号(Synchronize Sequence Numbers)<br>2、第二次握手：服务器收到syn包,必须确认客户的SYN（ack=j+1）,同时自己也发送一个SYN包（syn=k）,即SYN+ACK包,此时服务器进入SYN_RECV状态；<br>3、第三次握手：客户端收到服务器的SYN＋ACK包,向服务器发送确认包ACK(ack=k+1),此包发送完毕,客户端和服务器进入ESTABLISHED状态,完成三次握手。<br>完成三次握手,客户端与服务器开始传送数据。<br>所谓的三次握手（three times handshake；three-way handshaking）即对每次发送的数据量是怎样跟踪进行协商使数据段的发送和接收同步，根据所接收到的数据量而确定的数据确认数及数据发送、接收完毕后何时撤消联系，并建立虚连接。<br>为了提供可靠的传送，TCP在发送新的数据之前，以特定的顺序将数据包的序号，并需要这些包传送给目标机之后的确认消息。TCP总是用来发送大批量的数据。当应用程序在收到数据后要做出确认时也要用到TCP。<br>tcp 为什么要三次握手，两次不行吗？为什么？<br>如果采用两次握手，那么只要服务器发出确认数据包就会建立连接，但由于客户端此时并未响应服务器端的请求，那此时服务器端就会一直在等待客户端，这样服务器端就白白浪费了一定的资源。若采用三次握手，服务器端没有收到来自客户端的再此确认，则就会知道客户端并没有要求建立请求，就不会浪费服务器的资源。<br>什么是连接池<br>数据库连接池负责分配、管理和释放数据库连接，它允许应用程序重复使用一个现有的数据库连接，而不是再重新建立一个。<br>优点：<br>1.较少了网络开销<br>2.系统的性能会有一个实质的提升<br>3.没了麻烦的TIME_WAIT状态</p>
 
       
 
@@ -271,7 +339,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/15/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/18/%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -285,15 +353,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/12/15/A/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          A
-        
-      </div>
-    </a>
   
+    <a href="/2019/12/16/%E5%8D%9A%E5%AE%A2%E6%AD%A5%E9%AA%A4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">博客步骤</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
